@@ -54,8 +54,10 @@ export default function Hero() {
                 {profile.email}
               </a>
               <a
-                href={`tel:${profile.phone}`}
+                href={`tel:${profile.phoneDial}`}
                 className="flex items-center gap-2 px-4 py-2 rounded-full bg-forest-900 border border-forest-700 text-stone-300 text-sm hover:border-earth-500 hover:text-earth-300 transition-all duration-200"
+                aria-label={`Call Taoufiq Maroub at ${profile.phone}`}
+                title={`Call Taoufiq Maroub at ${profile.phone}`}
               >
                 <Phone size={14} />
                 {profile.phone}
@@ -85,6 +87,15 @@ export default function Hero() {
                 Me contacter
               </button>
             </div>
+
+            <a
+              href="/taoufiq-maroub-contact.vcf"
+              download="Taoufiq MAROUB Contact.vcf"
+              className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-forest-300 hover:text-earth-300 transition-colors"
+            >
+              <Phone size={14} />
+              Save contact details
+            </a>
           </div>
 
           {/* Photo */}

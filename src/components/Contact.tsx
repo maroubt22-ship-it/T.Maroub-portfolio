@@ -80,7 +80,12 @@ export default function Contact() {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-                { icon: Phone, label: 'Téléphone', value: profile.phone, href: `tel:${profile.phone}` },
+                {
+                  icon: Phone,
+                  label: 'Téléphone',
+                  value: profile.phone,
+                  href: `tel:${profile.phoneDial}`,
+                },
                 { icon: MapPin, label: 'Localisation', value: profile.location, href: undefined },
               ].map(({ icon: Icon, label, value, href }) => (
                 <div key={label} className="flex items-center gap-4">
@@ -92,6 +97,8 @@ export default function Contact() {
                     {href ? (
                       <a
                         href={href}
+                        aria-label={`Call Taoufiq Maroub at ${profile.phone}`}
+                        title={`Call Taoufiq Maroub at ${profile.phone}`}
                         className="text-forest-900 font-medium text-sm hover:text-earth-600 transition-colors"
                       >
                         {value}

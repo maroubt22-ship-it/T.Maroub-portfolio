@@ -6,9 +6,10 @@ export const profile = {
     'Étudiant marocain en infrastructures digitales, actuellement en formation qualifiante en intelligence artificielle. Passionné par les technologies innovantes, je cherche à mettre en pratique mes acquis théoriques à travers un stage stimulant dans le domaine de l\'IA. Mes précédentes expériences de stage m\'ont permis de développer des compétences solides en réseaux informatiques, tout en cultivant une approche rigoureuse, polyvalente et orientée solution.',
   email: 'taoufiq.maroub25@gmail.com',
   phone: '+212 696 496 645',
+  phoneDial: '+212696496645',
   location: 'Salé, Maroc',
   photo: '/ok.png',
-  cv: '/TAOUFIQ_MAROUB_CV_26.pdf',
+  cv: '/CV%20Taoufiq%20MAROUB%202626.pdf',
 };
 
 export const experiences = [
