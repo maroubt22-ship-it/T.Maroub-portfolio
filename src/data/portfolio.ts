@@ -9,7 +9,7 @@ export const profile = {
   phoneDial: '+212696496645',
   location: 'Salé, Maroc',
   photo: '/ok.png',
-  cv: '/CV%20Taoufiq%20MAROUB%202626.pdf',
+  cv: '/CV Taoufiq MAROUB 2626.pdf',
 };
 
 export const experiences = [

@@ -113,7 +113,7 @@ export default function Contact() {
 
             <a
               href={profile.cv}
-              download
+              download="CV Taoufiq MAROUB 2626.pdf"
               className="btn-gradient px-5 py-3 rounded-xl text-sm"
             >
               <Download size={16} />
